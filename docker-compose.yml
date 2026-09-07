@@ -1,0 +1,61 @@
+version: "3.9"
+
+networks:
+  fintel_network:
+    driver: bridge
+
+services:
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_financial
+    networks:
+      - fintel_network
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: financial_api
+    networks:
+      - fintel_network
+    ports:
+      - "8000:8000"
+    environment:
+      - QDRANT_HOST=qdrant
+      - OLLAMA_HOST=host.docker.internal
+      - API_BASE_URL=http://api:8000
+    volumes:
+      - ./notebook/distilbert_best_model.pt:/app/distilbert_best_model.pt
+      - ./notebook/distilbert_tokenizer:/app/distilbert_tokenizer
+      - ./notebook/headline_embeddings.npy:/app/headline_embeddings.npy
+      - ./notebook/metadata.json:/app/metadata.json
+      - ./notebook/day4_verified.csv:/app/day4_verified.csv
+    depends_on:
+      - qdrant
+    restart: unless-stopped
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    container_name: financial_dashboard
+    networks:
+      - fintel_network
+    ports:
+      - "8501:8501"
+    environment:
+      - API_BASE_URL=http://api:8000
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  qdrant_storage:
+    driver: local

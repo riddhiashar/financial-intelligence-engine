@@ -1,0 +1,31 @@
+# .dockerignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+.git/
+.gitignore
+venv/
+.venv/
+*.log
+
+# large model files — mounted as volumes instead
+notebook/distilbert_best_model.pt
+notebook/headline_embeddings.npy
+notebook/metadata.json
+notebook/distilbert_tokenizer/
+
+# data files
+notebook/financial_news.csv
+notebook/*.png
+notebook/*.ipynb
+
+# test files
+notebook/test_*.py
+notebook/performance_test.py
+notebook/week*.json

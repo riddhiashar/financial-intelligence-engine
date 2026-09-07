@@ -1,0 +1,94 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+
+# ==========================
+# Virtual Environments
+# ==========================
+venv/
+.venv/
+env/
+ENV/
+
+# ==========================
+# Environment Variables
+# ==========================
+.env
+.env.*
+
+# ==========================
+# IDE / Editor
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================
+# Operating System Files
+# ==========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================
+# Jupyter
+# ==========================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ==========================
+# Logs
+# ==========================
+*.log
+logs/
+build_log.txt
+
+# ==========================
+# Docker
+# ==========================
+qdrant_storage/
+docker_data/
+
+# ==========================
+# Machine Learning Models
+# (Excluded because they exceed GitHub's size limit)
+# ==========================
+notebook/distilbert_best_model.pt
+notebook/headline_embeddings.npy
+notebook/distilbert_tokenizer/
+notebook/metadata.json
+
+# ==========================
+# Large Datasets
+# ==========================
+notebook/financial_news.csv
+notebook/day3_preprocessed.csv
+notebook/day4_verified.csv
+
+# ==========================
+# Test / Cache Files
+# ==========================
+.pytest_cache/
+.cache/
+coverage.xml
+htmlcov/
+
+# ==========================
+# Miscellaneous
+# ==========================
+*.tmp
+*.bak
+*.pickle
+
+# Temporary notebook
+notebook/Untitled.ipynb
