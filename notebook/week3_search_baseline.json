@@ -1,0 +1,37 @@
+[
+  {
+    "query": "Tesla beats earnings expectations",
+    "latency_ms": 54.55,
+    "results_count": 5,
+    "top_similarity": 0.6293870210647583,
+    "top_headline": "Tesla's stock surges 8.8% to top the $800 level"
+  },
+  {
+    "query": "stock market crash recession fears",
+    "latency_ms": 73.37,
+    "results_count": 5,
+    "top_similarity": 0.7499668598175049,
+    "top_headline": "This economic trend could revive recession fears"
+  },
+  {
+    "query": "Federal Reserve interest rate decision",
+    "latency_ms": 48.73,
+    "results_count": 5,
+    "top_similarity": 0.6931679248809814,
+    "top_headline": "Read here for instant analysis of the Federal Reserve's inte"
+  },
+  {
+    "query": "Apple iPhone revenue growth",
+    "latency_ms": 47.8,
+    "results_count": 5,
+    "top_similarity": 0.609882652759552,
+    "top_headline": "$AAPL - Apple forecasts 100M+ 5G iPhone sales - report https"
+  },
+  {
+    "query": "analyst raises price target strong buy",
+    "latency_ms": 57.35,
+    "results_count": 5,
+    "top_similarity": 0.6244094371795654,
+    "top_headline": "Target shares surge after company crushes earnings and raise"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "query": "Tesla beats earnings expectations",
+    "week3_ms": 57.12,
+    "qdrant_ms": 84.76,
+    "speedup": 0.67,
+    "week3_top": "Tesla's stock surges 8.8% to top the $800 level",
+    "qdrant_top": "Tesla's stock surges 8.8% to top the $800 level",
+    "results_match": true
+  },
+  {
+    "query": "stock market crash recession fears",
+    "week3_ms": 26.73,
+    "qdrant_ms": 67.41,
+    "speedup": 0.4,
+    "week3_top": "This economic trend could revive recession fears",
+    "qdrant_top": "This economic trend could revive recession fears",
+    "results_match": true
+  },
+  {
+    "query": "Federal Reserve interest rate decision",
+    "week3_ms": 35.92,
+    "qdrant_ms": 61.54,
+    "speedup": 0.58,
+    "week3_top": "Read here for instant analysis of the Federal Reserve's inte",
+    "qdrant_top": "Read here for instant analysis of the Federal Reserve's inte",
+    "results_match": true
+  },
+  {
+    "query": "Apple iPhone revenue growth",
+    "week3_ms": 18.93,
+    "qdrant_ms": 52.28,
+    "speedup": 0.36,
+    "week3_top": "$AAPL - Apple forecasts 100M+ 5G iPhone sales - report https",
+    "qdrant_top": "$AAPL - Apple forecasts 100M+ 5G iPhone sales - report https",
+    "results_match": true
+  },
+  {
+    "query": "analyst raises price target strong buy",
+    "week3_ms": 38.6,
+    "qdrant_ms": 69.75,
+    "speedup": 0.55,
+    "week3_top": "Target shares surge after company crushes earnings and raise",
+    "qdrant_top": "Target shares surge after company crushes earnings and raise",
+    "results_match": true
+  }
+]

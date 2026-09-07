@@ -1,0 +1,82 @@
+[
+  {
+    "endpoint": "GET /health",
+    "runs": 10,
+    "errors": 0,
+    "min_ms": 8.87,
+    "max_ms": 34.42,
+    "mean_ms": 18.46,
+    "median_ms": 16.42,
+    "p95_ms": 32.79
+  },
+  {
+    "endpoint": "POST /analyze (no similar)",
+    "runs": 10,
+    "errors": 0,
+    "min_ms": 18.75,
+    "max_ms": 24.7,
+    "mean_ms": 21.41,
+    "median_ms": 20.93,
+    "p95_ms": 24.07
+  },
+  {
+    "endpoint": "POST /analyze (with similar)",
+    "runs": 10,
+    "errors": 0,
+    "min_ms": 43.38,
+    "max_ms": 265.39,
+    "mean_ms": 71.88,
+    "median_ms": 50.23,
+    "p95_ms": 58.45
+  },
+  {
+    "endpoint": "POST /batch (3 items)",
+    "runs": 10,
+    "errors": 0,
+    "min_ms": 52.8,
+    "max_ms": 70.53,
+    "mean_ms": 57.32,
+    "median_ms": 55.74,
+    "p95_ms": 60.15
+  },
+  {
+    "endpoint": "POST /batch (10 items)",
+    "runs": 10,
+    "errors": 0,
+    "min_ms": 169.44,
+    "max_ms": 200.25,
+    "mean_ms": 185.65,
+    "median_ms": 184.57,
+    "p95_ms": 197.29
+  },
+  {
+    "endpoint": "GET /search (no filter)",
+    "runs": 10,
+    "errors": 0,
+    "min_ms": 17.31,
+    "max_ms": 37.06,
+    "mean_ms": 25.32,
+    "median_ms": 23.09,
+    "p95_ms": 35.47
+  },
+  {
+    "endpoint": "GET /search (Bearish filter)",
+    "runs": 10,
+    "errors": 0,
+    "min_ms": 20.99,
+    "max_ms": 47.84,
+    "mean_ms": 31.27,
+    "median_ms": 28.61,
+    "p95_ms": 44.93
+  },
+  {
+    "endpoint": "GET /stats",
+    "runs": 10,
+    "errors": 0,
+    "min_ms": 38.7,
+    "max_ms": 83.15,
+    "mean_ms": 56.99,
+    "median_ms": 58.12,
+    "p95_ms": 80.39
+  }
+]
