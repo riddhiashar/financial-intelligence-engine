@@ -18,7 +18,7 @@ from transformers import (
 )
 
 # ─── Configuration ────────────────────────────────────────
-HF_USERNAME  = "your-huggingface-username"  # replace with yours
+HF_USERNAME  = "Riddhi2952"  # replace with yours
 REPO_NAME    = "financial-sentiment-distilbert"
 REPO_ID      = f"{HF_USERNAME}/{REPO_NAME}"
 
@@ -108,7 +108,7 @@ from transformers import pipeline
 
 classifier = pipeline(
     "text-classification",
-    model="your-username/financial-sentiment-distilbert"
+    model="Riddhi2952/financial-sentiment-distilbert"
 )
 
 result = classifier("$AAPL beats earnings estimates revenue up 12%")
@@ -132,7 +132,7 @@ print(result)
 - Short text: Optimized for headlines (avg 11.7 tokens), not long documents
 """
 
-with open(os.path.join(SAVE_DIR, "README.md"), "w") as f:
+with open(os.path.join(SAVE_DIR, "README.md"), "w", encoding="utf-8") as f:
     f.write(model_card)
 print("Model card created")
 
